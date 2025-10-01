@@ -1,8 +1,10 @@
-## Oppgave 4: Kunder - Referansetabeller
+## Oppgave 4: Kunder - referansetabeller
 
-Ved å opprette objekter av klassen `Customer` fra oppgave 3 kan vi representere kunder for en strømleverandør.
+Ved å opprette objekt av klassen `Customer` fra oppgave 3 kan vi representere kunder for en strømleverandør.
 
-Startkoden for denne oppgaven finnes i pakken `no.hvl.dat100.javael.oppgave4` og målet med oppgaven er å implementere en klasse som ved å bruke en referanse-tabell kan lagre informasjon om et antall kunder for et strømselskap.
+Startkoden for denne oppgaven finnes i pakken `no.hvl.dat100.javael.oppgave4`. 
+
+Målet med oppgaven er å implementere en klasse som ved å bruke en referanse-tabell kan lagre informasjon om kunder for et strømselskap.
 
 Referanse-tabellen i oppgaven skal brukes til å lagre referanser/pekere til `Customer`-objekt. Innganger i tabellen kan enten peke på et `Customer`-objekt eller være `null`. Det siste betyr at den tilsvarende plass i tabellen er ledig og at der kan innsettes et objekt på denne plassen i tabellen.
 
@@ -62,7 +64,7 @@ Implementer metoden:
 public Customer getCustomer(int customer_id)
 ```
 
-som søker igjennom `customers`-tabellen etter et `Customer`-objekt med samme id som gitt ved paramtren `customer_id`. Hvis et slik objekt finnes skal metoden returnere en peker til objektet, eller skal skal metoden returnere `null`.
+som søker igjennom `customers`-tabellen etter et `Customer`-objekt med samme id som gitt ved parameteren `customer_id`. Hvis et slik objekt finnes skal metoden returnere en peker til objektet, eller skal skal metoden returnere `null`.
 
 ### d) Sette inn kunde
 
@@ -72,7 +74,7 @@ Implementer metoden:
 public boolean addCustomer(Customer c) {
 ```
 
-som gitt et `Customer`-objekt `c` som parameter setter inn en peker til objektet `c` på første ledige plass i tabellen dvs. første plass i tabellen som er `null`.
+som gitt et `Customer`-objekt `c` som parameter setter inn en peker til objektet `c` på første ledige plass i tabellen dvs. første plass i tabellen som er `null`. Om objektet blit innsatt skal metoden returnere `true`. Hvis dere ikke er plass i tabellen dvs. ingen ledige plasser skal metoden returnere `false`.
 
 ### e) Slette kunde
 
@@ -82,7 +84,7 @@ Implementer metoden:
 public Customer removeCustomer(int customer_id)
 ```
 
-som slette søker igjennom tabellen etter en kunde med id gitt ved `customer_id`. Om en slik kunde finnes skal metoden sette det tilsvarende element i tabellen til `null` og returnere en peker til det `Customer`-objekt som ble funnet.
+som søker igjennom tabellen etter en kunde med id gitt ved `customer_id`. Om en slik kunde finnes skal metoden sette det tilsvarende element i tabellen til `null` og returnere en peker til det `Customer`-objekt som ble funnet. Om der ikke finnes et slik objekt i tabellen skal metoden returnere `null`.
 
 ### f) Kunde referansetabell
 
