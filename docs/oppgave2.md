@@ -1,10 +1,10 @@
 ## Oppgave 2: Månedlig strømforbruk og pris - 2-dimensjonale tabeller
 
-Kunder får en strømregning hver måned basert på det daglige strømforbruk og den daglige strømpris. I oppgave 1 bruke vi en 1-dimensjonell tabeller for å representere forbruk og priser time for hver hver dag.
+Kunder får en strømregning hver måned basert på det daglige strømforbruk og den daglige strømpris i løpet av måneden. I oppgave 1 brukte vi en 1-dimensjonell tabell for å representere forbruk og priser time for time på en dag.
 
 I denne oppgaven skal vi bruke en 2-dimensjonell tabell for å representere strømforbruk og priser for en måned. Tabellen vil på ytterste nivå ha innganger for hver dag i måneden som da peker på en 1-dimensjonell tabell med strømforbruk og priser for hver time for den dag som tabellen representerer.
 
-Start-koden for denne oppgaven finnes i pakken `no.hvl.dat100.javel.oppgave2`. Klassen `MonthPowerData.java` inneholder to 2-dimensjonale tabeller som innholder data som kan brukes til å teste metodene. **HUSK** å teste metodene etterhvert som de implementeres.
+Start-koden for denne oppgaven finnes i pakken `no.hvl.dat100.javel.oppgave2`. Klassen `MonthPowerData.java` inneholder to 2-dimensjonale tabeller som med data som kan brukes til å teste metodene. **HUSK** å teste metodene etterhvert som de implementeres.
 
 ### a) Skrive ut månedlig strømforbruk
 
@@ -14,7 +14,7 @@ Implementer metoden:
 public static void print_PowerUsage(double[][] usage)
 ```
 
-som skriver ut strømforbruket for måneden basert på innholder av den 2-dimensjonale tabellen som er gitt med som parameter. **Hint** bruk metoden for å skrive ut forbruk for en enkelt dag fra oppgave 1 som del av løsningen.
+som skriver ut strømforbruket for måneden basert på innholdet av den 2-dimensjonale tabellen som er gitt med som parameter. **Hint** bruk metoden for å skrive ut forbruk for en enkelt dag fra oppgave 1 som del av løsningen.
 
 Utskriften kan eksempelvis se ut som:
 
@@ -54,7 +54,7 @@ For Norgespris er der en grense for månedlig forbruk for hytter og primærbolig
 public static boolean exceedThreshold(double[][] powerusage, double threshold)
 ```
 
-som finner ut som det månedlige forbruk (`powerusage`) er høyere enn en gitt grense (`threshold). Bruk en while-løkke slik metoden kan returnere resultat såsnart det finnes ut at forbruk er over grensen.
+som finner ut om det månedlige forbruk (`powerusage`) er høyere enn en gitt grense (`threshold). Bruk en while-løkke slik metoden kan returnere resultat såsnart det finnes ut at forbruk er over grensen.
 
 ###  e) Spotpris for måneden
 
@@ -62,7 +62,7 @@ som finner ut som det månedlige forbruk (`powerusage`) er høyere enn en gitt g
 public static double computeSpotPrice(double[][] usage, double[][] prices)
 ```
 
-som beregner den strømpris for en måned basert på forbruk (`usage`) og priser (`prices`) for kunder som har spotprisavtale (dvs. pris uten strømavtale).
+som beregner den strømpris for en måned basert på forbruk (`usage`) og priser (`prices`) for kunder som har spotprisavtale (dvs. pris uten strømstøtte).
 
 
 ### f) Strømstøtte for måneden
@@ -73,7 +73,7 @@ Implementer metoden:
 public static double computePowerSupport(double[][] usage, double[][] prices)
 ```
 
-som beregner og returnerer hvor måned strømstøtte en kunder vil få med forbruk og priser som gitt med som parametre.
+som beregner og returnerer hvor nye strømstøtte en kunde vil få med forbruk og priser som gitt med som parametre.
 
 
 ### g) Norgespris for måneden
@@ -84,6 +84,6 @@ Implementer metoden:
 public static double computeNorgesPrice(double[][] usage)
 ```
 
-som beregner og returnerer hav Norgepris for kunden er med forbruket som er gitt med som parameter. Prøv å bruke en utvidet for-løkke for å implementere metoden.
+som beregner og returnerer hva Norgepris er for kunden med forbruket som er gitt med som parameter. Prøv å bruke en utvidet for-løkke for å implementere metoden.
 
 
