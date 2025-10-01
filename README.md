@@ -1,6 +1,6 @@
 # JavEl Programmeringsprosjekt - Java og Elektrisitet
 
-Strømpriser og støtteordninger er noe som mange personer i Norge er opptatt av i disse tider. Prosjektet handler om å implementere et Java program som kan generere strømregninger (fakturaer) for kunder basert på strømforbruk og strømpriser. 
+Strømpriser og støtteordninger er noe som mange personer i Norge er opptatt av for tiden. Prosjektet handler om å implementere et Java program som kan generere strømregninger (fakturaer) for kunder basert på strømforbruk og strømpriser. 
 
 Informasjon om de ulike strømstøtteordninger og hva som inngår i beregning av strømpris kan eks. finnes via: 
 
