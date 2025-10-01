@@ -2,7 +2,7 @@
 
 Strømleverandører trenger å holde informasjonen om kundene deres. 
 
-Startkoden for denne oppgaven finnes i pakken `no.hvl.dat100.javel.oppgave3` og handler om å implementere en klasse for kunder slik kunder kan representeres via objekt for denne klassen.
+Startkoden for denne oppgaven finnes i pakken `no.hvl.dat100.javel.oppgave3` og handler om å implementere en klasse for kunder slik kunder kan representeres via objekt av klassen.
 
 For strømkunder trenger leverandøren å ha informasjon om hvilken strømavtale som kunder har. Dette kan representeres via en oppramstypen som finnes i filen `PowerAgreementType.java`:
 
@@ -31,7 +31,7 @@ Implementer hent- og sett-metoder for alle objektvariable i klassen.
 
 ### d) toString metode
 
-Implementer en `toString()` metode i klassen som returnerer en tekstreng med informasjon verdien av objektvariable. Når strengen som returneres via metoden skrives ut for et kunde-objekt kan det eks. se slik ut:
+Implementer en `toString()` metode i klassen som returnerer en tekststreng med informasjon om verdien av objektvariable. Når strengen som returneres via metoden skrives ut for et Customer-objekt kan det eks. se slik ut:
 
 ```
 Customer number 1001
@@ -42,4 +42,4 @@ Agreement SPOTPRICE
 
 ### e) Test metodene i klassen
 
-Om du ikke allerede har gjort det undervies, skriv kode i `CustomerMain.java` som oppretter et `Customer`-objekt og tester hent/sett-metodene samt `toString`-metoden.
+Om du ikke allerede har gjort det underveis, skriv kode i `CustomerMain.java` som oppretter et `Customer`-objekt og tester hent/sett-metodene samt `toString`-metoden.
