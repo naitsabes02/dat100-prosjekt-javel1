@@ -23,4 +23,12 @@ jobs:
       run: mvn --batch-mode --update-snapshots compile
     - name: Run main 1
       run: mvn exec:java -D"exec.mainClass"="no.hvl.dat100.javel.oppgave1.DayMain"
+    - name: Run main 2
+      run: mvn exec:java -D"exec.mainClass"="no.hvl.dat100.javel.oppgave2.MonthMain"
+    - name: Run main 3
+      run: mvn exec:java -D"exec.mainClass"="no.hvl.dat100.javel.oppgave3.CustomerMain"
+    - name: Run main 4
+      run: mvn exec:java -D"exec.mainClass"="no.hvl.dat100.javel.oppgave4.CustomersMain"
+    - name: Run main 5
+      run: mvn exec:java -D"exec.mainClass"="no.hvl.dat100.javel.oppgave5.InvoiceMain"
     
