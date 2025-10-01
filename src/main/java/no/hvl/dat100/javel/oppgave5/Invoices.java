@@ -5,6 +5,6 @@ public class Invoices {
     public static void processInvoices(Invoice[] invoices) {
 
         // TODO
-        
+
     }
 }

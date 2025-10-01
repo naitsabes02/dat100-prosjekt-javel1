@@ -21,4 +21,6 @@ jobs:
         cache: maven
     - name: Compile with Maven
       run: mvn --batch-mode --update-snapshots compile
+    - name: Run main 1
+      run: mvn exec:java -D"exec.mainClass="no.hvl.dat100.javel.oppgave1.DayMain"
     
