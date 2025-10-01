@@ -28,7 +28,7 @@ Se på siden https://github.com/dat100hib/dat100public/blob/master/installasjon/
 
 På programmerings-lab i uke 41 opg 42 skal dere jobbe med prosjektet. Her vil lab-assistenter være til stede for å hjelpe og svare på spørsmål relatert til programmeringsprosjektet. I uke 41 er der **ikke** forelesning på torsdagen. Dette for å gi mer tid til å jobbe med projektet.
 
-## Uke 42 og uke 43 - Gruppemøter
+## Uke 42 og uke 43 - Gruppemøter for å sammenligne løsninger
 
 I uke 42 eller uke 43 (avhengig av hvor raskt gruppen kommer i mål med oppgavene) skal hver gruppe møtes med 1-2 andre grupper for å diskutere og sammenligne løsningene som dere er kommet frem til. Dere kan gå frem oppgave for oppgave. Om der er ting som gruppene ikke fikk til å fungere, kan dette også diskuteres som en del av møtet.
 
