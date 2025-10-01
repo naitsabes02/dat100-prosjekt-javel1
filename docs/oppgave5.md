@@ -1,10 +1,10 @@
 ## Oppgave 5: Fakturaer - Komplekse klasse og objektstrukturer
 
-På slutten av hvert måned må strømselskaper sende ut faktura for kunder basert på strømforbruk og strømpriser i løpet av måneden.
+På slutten av hvert måned sender strømselskaper ut en faktura (invoice) for kunder basert på strømforbruk og strømpriser i løpet av måneden.
 
-Startkoden for denne oppgaven finnes i pakken `no.hvl.dat100.javel.oppgave5` og målet for denne oppgave er å kunne generere en faktura for kunder. For å forenkle problemet skal fakturaer kunne inneholde informasjon om kunde samt pris for strømforbruket. Vi ser bort fra ulike typer påslag.
+Startkoden for denne oppgaven finnes i pakken `no.hvl.dat100.javel.oppgave5`. Målet for denne oppgave er å kunne generere en faktura for kunder. For å forenkle problemet skal fakturaer kunne inneholde informasjon om kunde samt pris for strømforbruket. Vi ser bort fra ulike typer påslag.
 
-Klassen `CustomerPowerData.java` inneholder test data som sammen med test data fra de tidligere oppgaver kan brukes til å teste metodene som implementeres etterhvert.
+Klassen `CustomerPowerData.java` inneholder test data som sammen med test data fra de tidligere oppgaver kan brukes til å teste metodene som implementeres.
 
 Koden som tester metodene som skal implementeres i denne oppgaven skrives i klassen `CustomersMain.java`. Utover dette skal der legges til kode i klassene `Invoice.java` og `Invoices.java`.
 
@@ -22,7 +22,7 @@ public class Invoice {
 
 ```
 
-Legg spesielt merke til at et `Invoice`-objekt til ha en referanse til et `Customer`-objekt.
+Legg spesielt merke til at et `Invoice`-objekt vil ha en referanse til et `Customer`-objekt.
 
 ### a) Konstruktør
 
@@ -42,7 +42,7 @@ Implementer metoden:
 public void computeAmount()
 ```
 
-som beregner og setter objekt-variablen `amount` lik det beløp som kunden skal betale for strømmen. Metoden skal ta hensyn til hvilken strømavtale kunder har.
+som beregner og setter objekt-variablen `amount` lik det beløp som kunden skal betale for strømmen i måneden. Metoden skal ta hensyn til hvilken strømavtale kunder har og bruke informasjonen som er lagret i `usage` og `prices` objektvariablene.
 
 ### c) Generere fakture
 
@@ -73,7 +73,7 @@ Implementer metoden:
 public static void processInvoices(Invoice[] invoices)
 ```
 
-i klassen `Invoices` som bruker `computeAmount`-metoden fra ovenfor samt `printInvoice`-metoden til å generere og skrive ut flere fakturaer.
+i klassen `Invoices` som bruker `computeAmount`-metoden samt `printInvoice`-metoden til å generere og skrive ut flere fakturaer.
 
 Output kan eks. se ut som:
 
