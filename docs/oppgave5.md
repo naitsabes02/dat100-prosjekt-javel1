@@ -1,4 +1,4 @@
-## Oppgave 5: Fakturaer - Komplekse klasse og objektstrukturer
+## Oppgave 5: Fakturaer - Komplekse klasse- og objektstrukturer
 
 På slutten av hvert måned sender strømselskaper ut en faktura (invoice) for kunder basert på strømforbruk og strømpriser i løpet av måneden.
 
