@@ -1,4 +1,4 @@
-## Oppgave 3: Klasser og objekter
+## Oppgave 3: Kunde - klasser og objekter
 
 Strømleverandører trenger å holde informasjonen om kundene deres. 
 
