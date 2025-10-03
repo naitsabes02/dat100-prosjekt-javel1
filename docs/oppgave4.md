@@ -6,9 +6,9 @@ Startkoden for denne oppgaven finnes i pakken `no.hvl.dat100.javael.oppgave4`.
 
 Målet med oppgaven er å implementere en klasse som ved å bruke en referanse-tabell kan lagre informasjon om kunder for et strømselskap.
 
-Referanse-tabellen i oppgaven skal brukes til å lagre referanser/pekere til `Customer`-objekt. Innganger i tabellen kan enten peke på et `Customer`-objekt eller være `null`. Det siste betyr at den tilsvarende plass i tabellen er ledig og at der kan innsettes et objekt på denne plassen i tabellen.
+Referanse-tabellen i oppgaven skal brukes til å lagre referanser/pekere til `Customer`-objekt. Innganger i tabellen kan enten peke på et `Customer`-objekt eller være `null`. Det siste betyr at den tilsvarende plassen i tabellen er ledig og at det kan settes inn et objekt på denne plassen i tabellen.
 
-Husk å skrive kode i klassen `CustomersMain.java` som tester metodene som implementeres etterhvert. Kundeinformasjon for å teste med kan eks. se ut som:
+Husk å skrive kode i klassen `CustomersMain.java` som tester metodene som implementeres etterhvert. Kundeinformasjon for å teste med kan for eksempel se ut som:
 
 ```
 Name  Alice Smith
@@ -54,7 +54,7 @@ Implementer metoden:
 public int countNonNull()
 ```
 
-som teller opp hvor mange ikke-null pekere som der er i tabellen `customers`
+som teller opp hvor mange ikke-null pekere som der er i tabellen `customers`.
 
 ### c) Hente kunde
 
@@ -64,7 +64,7 @@ Implementer metoden:
 public Customer getCustomer(int customer_id)
 ```
 
-som søker igjennom `customers`-tabellen etter et `Customer`-objekt med samme id som gitt ved parameteren `customer_id`. Hvis et slik objekt finnes skal metoden returnere en peker til objektet, eller skal skal metoden returnere `null`.
+som søker igjennom `customers`-tabellen etter et `Customer`-objekt med samme id som gitt ved parameteren `customer_id`. Hvis et slik objekt finnes, skal metoden returnere en peker til objektet. Ellers skal skal metoden returnere `null`.
 
 ### d) Sette inn kunde
 
@@ -74,7 +74,7 @@ Implementer metoden:
 public boolean addCustomer(Customer c) {
 ```
 
-som gitt et `Customer`-objekt `c` som parameter setter inn en peker til objektet `c` på første ledige plass i tabellen dvs. første plass i tabellen som er `null`. Om objektet blit innsatt skal metoden returnere `true`. Hvis dere ikke er plass i tabellen dvs. ingen ledige plasser skal metoden returnere `false`.
+som gitt et `Customer`-objekt `c` som parameter, setter inn en peker til objektet `c` på første ledige plass i tabellen dvs. første plass i tabellen som er `null`. Om objektet ble satt inn, skal metoden returnere `true`. Hvis der ikke er plass i tabellen dvs. ingen ledige plasser skal metoden returnere `false`.
 
 ### e) Slette kunde
 
@@ -94,4 +94,4 @@ Implementer metoden:
 public Customer[] getCustomers()
 ```
 
-som teller opp hvor mange kunder som er lagret i tabellen, oppretter og returnerer en ny tabell med pekere til de kunder som finnes i `customers`-tabellen.
+som teller opp hvor mange kunder som er lagret i tabellen, oppretter og returnerer en ny tabell med pekere til de kundene som finnes i `customers`-tabellen.
