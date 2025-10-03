@@ -10,7 +10,7 @@ Informasjon om de ulike strømstøtteordninger og hva som inngår i beregning av
 
 Denne oppbevaringsplassen inneholder start-kode i form av et IntelliJ/Maven-prosjekt som skal danne utgangspunkt for ulike Java programmer. I prosjektet skal dere jobbe i grupper med opptil 3 personer med å implementere de delene som mangler for at programmene blir komplett. 
 
-Dere vil **ikke** få utlevert enhetstester (unit-tests) for automatisk å teste koden som dere implementerer. Istedet må dere selv skrive noen mindre Java-programmer som bruker den koden som dere skriver. Det er **viktig** teste underveis og start-koden inneholder noe eksempel data for strømforbruk og strømpriser som kan brukes som testdata.
+Dere vil **ikke** få utlevert enhetstester (unit-tests) for automatisk å teste koden som dere implementerer. Istedet må dere selv skrive noen mindre Java-programmer som bruker den koden som dere skriver. Det er **viktig** å teste underveis og start-koden inneholder noe eksempel data for strømforbruk og strømpriser som kan brukes som testdata.
 
 ## Senk skuldrene
 
