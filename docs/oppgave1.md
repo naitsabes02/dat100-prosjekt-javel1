@@ -4,7 +4,7 @@ Start-koden for denne oppgaven finnes i pakken `no.hvl.dat100.javel.oppgave1` og
 
 For en strømkunde registeres strømforbruk (målt i kWh) typisk hver time i døgnet og tilsvarende vil vi ha en spot-pris i NOK per kWh for hver time i døgnet.
 
-Dette betyr at vi eks. kan representeres strømforbruk som en tabell med heltall - et tall for hver time:
+Dette betyr at vi for eksempel kan representere strømforbruk som en tabell med heltall - et tall for hver time:
 
 ```java
 public static double[] powerusage_day = {
@@ -33,13 +33,13 @@ Filen `DayPowerData.java` inneholder de to tabellene ovenfor.
 
 Metodene som skal implementers i denne oppgaven finnes i klassen `DailyPower.java`. 
 
-I klassen `DayMain.java` skal dere skrive kode som tester ut de metodene som dere implementere nedenfor. Her kan dere bruke eksempel data fra filen `DayPowerData.java`. 
+I klassen `DayMain.java` skal dere skrive kode som tester ut de metodene som dere implementere nedenfor. Her kan dere bruke eksempeldata fra filen `DayPowerData.java`. 
 
 Husk at for å referere til tabellene må dere bruke formen `DayPowerData.powerusage_day`og `DayPowerData.powerprices_day`. 
 
-For å refere til metodene i klassen `DailyPower` skal klasse navnet skrives foran metoden som kalles. 
+For å refere til metodene i klassen `DailyPower` skal klassenavnet skrives foran metoden som kalles. 
 
-Det er god praksis (**viktigt**) å skrive kode som tester metodene der impplementerer etterhvert. Dette gjelder også for de etterfølgende oppgaver i prosjektet.
+Det er god praksis (**viktigt**) å skrive kode som tester metodene dere implementerer etterhvert. Dette gjelder også for de etterfølgende oppgaver i prosjektet.
 
 ### a) Skrive ut strømpriser
 
@@ -49,13 +49,13 @@ Implementer metoden:
 public static void printPowerPrices(double[] prices)
 ```
 
-som bruker en for-løkke til å skrive ut strømpriser utefra tabellen `prices` gitt med som parameter. Utskriften kan eksempelvis se slik ut:
+som bruker en for-løkke til å skrive ut strømpriser utfra tabellen `prices` gitt med som parameter. Utskriften kan eksempelvis se slik ut:
 
 ```
 0.34 kWh 0.29 kWh 0.31 kWh 0.45 kWh 0.41 kWh 0.38 kWh 2.12 kWh 1.87 kWh 2.03 kWh 1.01 kWh 0.95 kWh 0.89 kWh 1.11 kWh 0.84 kWh 0.93 kWh 1.08 kWh 2.45 kWh 2.78 kWh 2.36 kWh 2.19 kWh 0.91 kWh 0.73 kWh 0.66 kWh 0.59 kWh
 ```
 
-For å få skrevet flyttall ut med 2-desimaler kan eks. følgende setning brukes: 
+For å få skrevet flyttall ut med 2 desimaler kan for eksempel følgende setning brukes: 
 
 ```java
 System.out.printf("%.2f kWh ", verdi/variabel som skal skrives ut);
@@ -68,7 +68,7 @@ Implementer metoden:
 ```java
 public static void printPowerUsage(double[] usage)
 ```
-som skriver ut strømforbruk utefra tabellen `usage` gitt med som parameter. Utskriften kan eksempelvis se slik ut:
+som skriver ut strømforbruk utfra tabellen `usage` gitt med som parameter. Utskriften kan eksempelvis se slik ut:
 
 ```
 0.10 NOK 0.20 NOK 0.30 NOK 0.40 NOK 0.50 NOK 0.60 NOK 0.70 NOK 0.80 NOK 1.90 NOK 1.00 NOK 1.10 NOK 1.20 NOK 1.30 NOK 1.40 NOK 1.50 NOK 1.60 NOK 1.70 NOK 1.80 NOK 1.90 NOK 2.00 NOK 1.50 NOK 1.00 NOK 0.50 NOK 0.10 NOK
@@ -92,11 +92,11 @@ Implementer metoden:
 public static double computeSpotPrice(double[] usage, double[] prices)
 ```
 
-som utefra strømforbruk time for time (`usage`) og spotpris per kWh time for hver time (`prices`) beregner den totale strømpris for dagen. Strømprisen for en gitt time fås ved å multiplisere strømforbruket for timen med den tilsvarende spotpris for timen.
+som utfra strømforbruk time for time (`usage`) og spotpris per kWh time for hver time (`prices`) beregner den totale strømpris for dagen. Strømprisen for en gitt time fås ved å multiplisere strømforbruket for timen med den tilsvarende spotpris for timen.
 
 ### e) Strømpris med strømstøtte
 
-Når en kunde har en strømstøtteavtale dekkes 90 % av prisen som er over 93,75 øre.
+Når en kunde har en strømstøtteavtale, dekkes 90 % av prisen som er over 93,75 øre.
 
 Implementer hjelpe-metoden:
 
@@ -114,7 +114,7 @@ Implementer metoden:
 public static double computePowerSupport(double[] usage, double[] prices)
 ```
 
-som utefra forbruk og strømpriser for en enkelt dag beregner strømstøtten for kunden på denne dagen.
+som utfra forbruk og strømpriser for en enkelt dag beregner strømstøtten for kunden på denne dagen.
 
 ### g) Norgespris
 
@@ -135,7 +135,7 @@ Implementer metoden:
 public static double findPeakUsage(double[] usage)
 ```
 
-som utefra time for time forbruket (`usage`) beregner og returnerer det største strømforbruket som kunden har hatt på en time i løpet av dagen.
+som utfra time for time forbruket (`usage`) beregner og returnerer det største strømforbruket som kunden har hatt på en time i løpet av dagen.
 
 ### i) Gjennomsnitt strømforbruk
 
