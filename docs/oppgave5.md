@@ -2,7 +2,7 @@
 
 På slutten av hvert måned sender strømselskaper ut en faktura (invoice) for kunder basert på strømforbruk og strømpriser i løpet av måneden.
 
-Startkoden for denne oppgaven finnes i pakken `no.hvl.dat100.javel.oppgave5`. Målet for denne oppgave er å kunne generere en faktura for kunder. For å forenkle problemet skal fakturaer kunne inneholde informasjon om kunde samt pris for strømforbruket. Vi ser bort fra ulike typer påslag.
+Startkoden for denne oppgaven finnes i pakken `no.hvl.dat100.javel.oppgave5`. Målet for denne oppgaven er å kunne generere en faktura for kunder. For å forenkle problemet skal fakturaer kun inneholde informasjon om kunde samt pris for strømforbruket. Vi ser bort fra ulike typer påslag.
 
 Klassen `CustomerPowerData.java` inneholder test data som sammen med test data fra de tidligere oppgaver kan brukes til å teste metodene som implementeres.
 
@@ -52,7 +52,7 @@ Implementer metoden:
 public void printInvoice()
 ```
 
-som skriver ut en faktura på skjermen. Output kan eks. se slik ut:
+som skriver ut en faktura på skjermen. Output kan for eksempel se slik ut:
 
 ```
 Customer number 1005
@@ -65,7 +65,7 @@ Usage:      933.27 kWh
 Amount:    1709.22 NOK
 ```
 
-### d) 
+### d) Flere fakturaer
 
 Implementer metoden:
 
@@ -75,7 +75,7 @@ public static void processInvoices(Invoice[] invoices)
 
 i klassen `Invoices` som bruker `computeAmount`-metoden samt `printInvoice`-metoden til å generere og skrive ut flere fakturaer.
 
-Output kan eks. se ut som:
+Output kan for eksempel se ut som:
 
 ```java
 ========================
