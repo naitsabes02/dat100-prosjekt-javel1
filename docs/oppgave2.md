@@ -4,7 +4,7 @@ Kunder får en strømregning hver måned basert på det daglige strømforbruk og
 
 I denne oppgaven skal vi bruke en 2-dimensjonell tabell for å representere strømforbruk og priser for en måned. Tabellen vil på ytterste nivå ha innganger for hver dag i måneden som da peker på en 1-dimensjonell tabell med strømforbruk og priser for hver time for den dag som tabellen representerer.
 
-Start-koden for denne oppgaven finnes i pakken `no.hvl.dat100.javel.oppgave2`. Klassen `MonthPowerData.java` inneholder to 2-dimensjonale tabeller som med data som kan brukes til å teste metodene. **HUSK** å teste metodene etterhvert som de implementeres.
+Start-koden for denne oppgaven finnes i pakken `no.hvl.dat100.javel.oppgave2`. Klassen `MonthPowerData.java` inneholder to 2-dimensjonale tabeller med data som kan brukes til å teste metodene. **HUSK** å teste metodene etterhvert som de implementeres.
 
 ### a) Skrive ut månedlig strømforbruk
 
@@ -44,7 +44,7 @@ Implementer metoden:
 public static double computePowerUsage(double[][] usage)
 ```
 
-som beregner og returnerer total strømforbruk for en måned.
+som beregner og returnerer totalt strømforbruk for en måned.
 
 ### d) Forbruksgrense
 
@@ -73,7 +73,7 @@ Implementer metoden:
 public static double computePowerSupport(double[][] usage, double[][] prices)
 ```
 
-som beregner og returnerer hvor nye strømstøtte en kunde vil få med forbruk og priser som gitt med som parametre.
+som beregner og returnerer hvor mye strømstøtte en kunde vil få med forbruk og priser gitt med som parametre.
 
 
 ### g) Norgespris for måneden
