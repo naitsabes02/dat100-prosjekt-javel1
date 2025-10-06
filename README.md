@@ -14,9 +14,9 @@ Dere vil **ikke** få utlevert enhetstester (unit-tests) for automatisk å teste
 
 ## Senk skuldrene
 
-Java-programmeringen i prosjektet vil basere seg på det som er gjennomgått i faget frem til nå dvs. kapittel 1 til 6 i Java-boken. Det betyr at prosjektet også er tenkt som repetisjon og les gjerne i boken underveis og se på videoene som ble lagt ut i forkant av undervisningen for å få bedre kontroll på de tema som vi har vært igjennom i faget. 
-
-Deler av prosjektet vil sannsynligvis oppleves som krevende for en del. Det gjelder i hovedsak om å jobbe seriøst med programmeringsoppgavene og få til så mye dere klarer.
+Java-programmeringen i prosjektet vil basere seg på det som er gjennomgått i faget frem til nå dvs. kapittel 1 til 6 i Java-boken. Det betyr at prosjektet også er tenkt som repetisjon og les gjerne i boken undervies og se på videoene som ble lagt ut i forkant av undervisningen for å få bedre kontroll på de tema som vi har vært igjennom i faget. 
+ 
+Deler av prosjektet vil sannsynligvis oppleves som krevende for en del. Det gjelder i hovedsak om å jobbe seriøst med programmeringsoppgavene og få så mye til som dere klarer.
 
 ## Bruk av code completion og co-pilot
 
