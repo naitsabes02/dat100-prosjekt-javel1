@@ -13,7 +13,20 @@ public class InvoiceMain {
         System.out.println("==============");
         System.out.println();
 
-        /*
+
+
+
+        Customer kunde1 = new Customer("Ola Nordmann", "ola@norge.no", 1001, PowerAgreementType.SPOTPRICE);
+
+        double[][] usage = MonthPowerData.powerusage_month;
+        double[][] prices = MonthPowerData.powerprices_month;
+
+        Invoice faktura = new Invoice(kunde1, "Oktober", usage, prices);
+
+        faktura.computeAmount();
+        faktura.printInvoice();
+
+        /*a
         TODO
 
          Write code that uses the methods implemented in the Invoice-classes
