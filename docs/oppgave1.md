@@ -4,20 +4,7 @@ Start-koden for denne oppgaven finnes i pakken `no.hvl.dat100.javel.oppgave1` og
 
 For en strømkunde registeres strømforbruk (målt i kWh) typisk hver time i døgnet og tilsvarende vil vi ha en spot-pris i NOK per kWh for hver time i døgnet.
 
-Dette betyr at vi for eksempel kan representere strømforbruk som en tabell med heltall - et tall for hver time:
-
-```java
-public static double[] powerusage_day = {
-
-            0.34, 0.29, 0.31, 0.45, 0.41, 0.38,
-            2.12, 1.87, 2.03, 1.01, 0.95, 0.89,
-            1.11, 0.84, 0.93, 1.08, 2.45, 2.78,
-            2.36, 2.19, 0.91, 0.73, 0.66, 0.59
-
-    };
-```
-
-og tilsvarende kan vi representere strømprisen for hver time på dagen med en tabell med 24 elementer:
+Dette betyr at vi for eksempel kan representere strømprisen som en tabell med heltall - et tall for hver time:
 
 ```java
 public static double[] powerprices_day = {
@@ -26,6 +13,18 @@ public static double[] powerprices_day = {
             0.7, 0.8, 1.9, 1.0, 1.1, 1.2,
             1.3, 1.4, 1.5, 1.6, 1.7, 1.8,
             1.9, 2.0, 1.5, 1.0, 0.5, 0.1
+    };
+```
+
+og tilsvarende kan vi representere strømforbruk  for hver time på dagen med en tabell med 24 elementer:
+
+```java
+public static double[] powerusage_day = {
+
+            0.34, 0.29, 0.31, 0.45, 0.41, 0.38,
+            2.12, 1.87, 2.03, 1.01, 0.95, 0.89,
+            1.11, 0.84, 0.93, 1.08, 2.45, 2.78,
+            2.36, 2.19, 0.91, 0.73, 0.66, 0.59
     };
 ```
 
@@ -52,7 +51,7 @@ public static void printPowerPrices(double[] prices)
 som bruker en for-løkke til å skrive ut strømpriser utfra tabellen `prices` gitt med som parameter. Utskriften kan eksempelvis se slik ut:
 
 ```
-0.34 kWh 0.29 kWh 0.31 kWh 0.45 kWh 0.41 kWh 0.38 kWh 2.12 kWh 1.87 kWh 2.03 kWh 1.01 kWh 0.95 kWh 0.89 kWh 1.11 kWh 0.84 kWh 0.93 kWh 1.08 kWh 2.45 kWh 2.78 kWh 2.36 kWh 2.19 kWh 0.91 kWh 0.73 kWh 0.66 kWh 0.59 kWh
+0.10 NOK 0.20 NOK 0.30 NOK 0.40 NOK 0.50 NOK 0.60 NOK 0.70 NOK 0.80 NOK 1.90 NOK 1.00 NOK 1.10 NOK 1.20 NOK 1.30 NOK 1.40 NOK 1.50 NOK 1.60 NOK 1.70 NOK 1.80 NOK 1.90 NOK 2.00 NOK 1.50 NOK 1.00 NOK 0.50 NOK 0.10 NOK
 ```
 
 For å få skrevet flyttall ut med 2 desimaler kan for eksempel følgende setning brukes: 
@@ -71,7 +70,7 @@ public static void printPowerUsage(double[] usage)
 som skriver ut strømforbruk utfra tabellen `usage` gitt med som parameter. Utskriften kan eksempelvis se slik ut:
 
 ```
-0.10 NOK 0.20 NOK 0.30 NOK 0.40 NOK 0.50 NOK 0.60 NOK 0.70 NOK 0.80 NOK 1.90 NOK 1.00 NOK 1.10 NOK 1.20 NOK 1.30 NOK 1.40 NOK 1.50 NOK 1.60 NOK 1.70 NOK 1.80 NOK 1.90 NOK 2.00 NOK 1.50 NOK 1.00 NOK 0.50 NOK 0.10 NOK
+0.34 kWh 0.29 kWh 0.31 kWh 0.45 kWh 0.41 kWh 0.38 kWh 2.12 kWh 1.87 kWh 2.03 kWh 1.01 kWh 0.95 kWh 0.89 kWh 1.11 kWh 0.84 kWh 0.93 kWh 1.08 kWh 2.45 kWh 2.78 kWh 2.36 kWh 2.19 kWh 0.91 kWh 0.73 kWh 0.66 kWh 0.59 kWh
 ```
 
 ### c) Total strømforbruk for en dag
